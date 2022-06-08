@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Conway's Game of Life</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <label for="board-size">Size of board</label>
+        <input type="number" id="board-size" min="0">
+
+        <label for="p0">p0:</label>
+        <input type="number" id="p0" min="0" max="1">
+
+        <button onclick="renderBoard()">Render Board</button>
+
+        <label for="moves-number">Set number of moves:</label>
+        <input type="number" id="moves-number" min="0">
+        <label for="moves-delay">Set delay of moves:</label>
+        <input type="number" id="moves-delay" min="0">
+        <button onclick="makeMoves()">Make Moves</button>
+
+        <button id="draw-plot">Draw Plot</button>
+        
+        <table id="board"></table>
+        <div id="plot"></div>
+
+        <script src="plotly-2.9.0.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
